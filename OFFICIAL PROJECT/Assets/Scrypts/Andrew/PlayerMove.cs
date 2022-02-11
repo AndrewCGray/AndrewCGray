@@ -8,7 +8,9 @@ public class PlayerMove : MonoBehaviour
     public float movespeed = 5.0f;
     Rigidbody2D rb;
     bool isVertical;
-    string lastDirection;
+    bool flipX;
+    bool flipY;
+    string lastDirection = "None";
     
 
     // Start is called before the first frame update
@@ -34,6 +36,31 @@ public class PlayerMove : MonoBehaviour
 
     void UpdateAnimations(Vector2 velocity)
     {
-        
+        string currentDirection = "None";
+        //Set Current Direction
+        if(velocity[0] > 0 && (velocity[1] > -0.1 && velocity[1] < 0.1))
+        {
+            currentDirection = "Right";
+        }else if(velocity[0] < 0 && (velocity[1] > -0.1 && velocity[1] < 0.1))
+        {
+            currentDirection = "Left";
+        }else if(velocity[1] > 0 && (velocity[0] > -0.1 && velocity[0] < 0.1))
+        {
+            currentDirection = "Up";
+        }else if(velocity[1] < 0 && (velocity[0] > -0.1 && velocity[0] < 0.1))
+        {
+            currentDirection = "Down";
+        }
+
+
+        //Now, Logic Depending Upon Last Movement
+        if(lastDirection == "Down")
+        {
+            if(currentDirection == "Left" || currentDirection == "Right")
+            {
+
+            }
+        }
+
     }
 }
