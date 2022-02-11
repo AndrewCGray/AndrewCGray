@@ -7,6 +7,9 @@ public class PlayerMove : MonoBehaviour
 
     public float movespeed = 5.0f;
     Rigidbody2D rb;
+    bool isVertical;
+    string lastDirection;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,5 +28,12 @@ public class PlayerMove : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(x * movespeed, y * movespeed);
+        UpdateAnimations(rb.velocity);
+        
+    }
+
+    void UpdateAnimations(Vector2 velocity)
+    {
+        
     }
 }
