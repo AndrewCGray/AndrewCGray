@@ -11,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     bool flipH;
     bool flipV;
     string lastDirection = "None";
+    public Animator anim;
     
 
     // Start is called before the first frame update
@@ -188,7 +189,7 @@ public class PlayerMove : MonoBehaviour
                 isVertical = false;
                 flipV = false;
                 flipH = true;
-            }else if(currentDirection === "Right")
+            }else if(currentDirection == "Right")
             {
                 isVertical = false;
                 flipV = false;
@@ -196,6 +197,10 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
+        //Update Animations
+        anim.SetBool("isVertical", isVertical);
+        GetComponent<SpriteRenderer>().flipX = flipH;
+        GetComponent<SpriteRenderer>().flipY = flipV;
         
 
     }
