@@ -8,8 +8,8 @@ public class PlayerMove : MonoBehaviour
     public float movespeed = 5.0f;
     Rigidbody2D rb;
     bool isVertical;
-    bool flipX;
-    bool flipY;
+    bool flipH;
+    bool flipV;
     string lastDirection = "None";
     
 
@@ -54,13 +54,149 @@ public class PlayerMove : MonoBehaviour
 
 
         //Now, Logic Depending Upon Last Movement
-        if(lastDirection == "Down")
+        if (lastDirection == "Down")
         {
-            if(currentDirection == "Left" || currentDirection == "Right")
+            if (currentDirection == "Left" || currentDirection == "Right")
             {
-
+                isVertical = true;
+                flipV = false;
+                flipH = false;
+            }
+            else if (currentDirection == "Up")
+            {
+                isVertical = true;
+                flipV = true;
+                flipH = true;
+            }
+            else if (currentDirection == "Down" || currentDirection == "None")
+            {
+                isVertical = true;
+                flipV = false;
+                flipH = false;
+            }
+            else
+            {
+                isVertical = true;
+                flipV = false;
+                flipH = false;
+            }
+            if (currentDirection != "None")
+            {
+                lastDirection = "Down";
+            }
+            else
+            {
+                lastDirection = "None";
             }
         }
+        else if (lastDirection == "Up")
+        {
+            if (currentDirection == "Left" || currentDirection == "Right")
+            {
+                isVertical = true;
+                flipV = false;
+                flipH = false;
+            }
+            else if (currentDirection == "Up" || currentDirection == "None")
+            {
+                isVertical = true;
+                flipV = true;
+                flipH = true;
+            }
+            else if (currentDirection == "Down")
+            {
+                isVertical = true;
+                flipV = false;
+                flipH = false;
+            }
+            if (currentDirection != "None")
+            {
+                lastDirection = "Up";
+            }
+            else
+            {
+                lastDirection = "None";
+            }
+        } else if (lastDirection == "Left")
+        {
+            if (currentDirection == "Down" || currentDirection == "Up")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = true;
+            } else if (currentDirection == "Left" || currentDirection == "None")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = true;
+            } else if (currentDirection == "Right")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = false;
+            }
+            if (currentDirection != "None")
+            {
+                lastDirection = "Left";
+            }
+            else
+            {
+                lastDirection = "None";
+            }
+
+        } else if (lastDirection == "Right")
+        {
+            if (currentDirection == "Down" || currentDirection == "Down")
+            {
+                isVertical = false;
+                flipH = false;
+                flipV = false;
+            } else if (currentDirection == "Left")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = true;
+            } else if (currentDirection == "Right" || currentDirection == "None")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = false;
+            }
+            if (currentDirection != "None")
+            {
+                lastDirection = "Right";
+            }
+            else
+            {
+                lastDirection = "None";
+            }
+        }
+        else
+        {
+            if (currentDirection == "Down")
+            {
+                isVertical = true;
+                flipV = false;
+                flipH = false;
+            }else if(currentDirection == "Up")
+            {
+                isVertical = true;
+                flipV = true;
+                flipH = true;
+            }else if(currentDirection == "Left")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = true;
+            }else if(currentDirection === "Right")
+            {
+                isVertical = false;
+                flipV = false;
+                flipH = false;
+            }
+        }
+
+        
 
     }
 }
