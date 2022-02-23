@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Andrew/Proof Of Concept/Entering Buildings/Entering Houses.unity
     guid: 1d9199c719ff545b395efc965d59e9fb
+  - enabled: 0
+    path: Assets/Scenes/Andrew/Data Persistance/Data Persistance.unity
+    guid: 96aed725ab86549a7869609b866fd3b9
+  - enabled: 1
+    path: Assets/Scenes/Andrew/Data Persistance/Data Persistance 1.unity
+    guid: b2e00feb2a3f447d39bee6cb211b1b1d
+  - enabled: 1
+    path: Assets/Scenes/Andrew/Data Persistance/Data Persistance 2.unity
+    guid: 356e47908beeb4cb9bddff6df01c53d8
   m_configObjects: {}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DataPOCManager : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class DataPOCManager : MonoBehaviour
 
     void Update()
     {
-        text.text = this.num.ToString();
+        //text.text = this.num.ToString();
     }
+
+
 }
