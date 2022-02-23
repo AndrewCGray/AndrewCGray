@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Andrew/Proof Of Concept/Entering Buildings/Entering Houses.unity
+- path: Assets/Scenes/Andrew/Data Persistance/Data Persistance.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
