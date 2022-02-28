@@ -100,7 +100,7 @@ TextureImporter:
     second: underwater_31
   - first:
       213: 649314789113198326
-    second: underwater_32
+    second: Door_1
   - first:
       213: 711719228632674994
     second: underwater_33
@@ -6074,7 +6074,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_32
+      name: Door_1
       rect:
         serializedVersion: 2
         x: 544
