@@ -364,7 +364,7 @@ TextureImporter:
     second: underwater_119
   - first:
       213: -3629671500169686075
-    second: underwater_120
+    second: stonefloor
   - first:
       213: 5309600412294790076
     second: underwater_121
@@ -715,7 +715,7 @@ TextureImporter:
     second: underwater_236
   - first:
       213: 3348670088541291517
-    second: underwater_237
+    second: WoodenFloor
   - first:
       213: 1034584797003246571
     second: underwater_238
@@ -3283,13 +3283,13 @@ TextureImporter:
     second: SandPath8
   - first:
       213: -7882739660639775469
-    second: underwater_1093
+    second: BrownRug_TopLeft
   - first:
       213: -7322402839529969253
-    second: underwater_1094
+    second: BrownRug_TopMiddle
   - first:
       213: 8986300335467650425
-    second: underwater_1095
+    second: BrownRug_TopRight
   - first:
       213: -969526931533034205
     second: underwater_1096
@@ -3454,13 +3454,13 @@ TextureImporter:
     second: SandPath9
   - first:
       213: 6020695436395266022
-    second: underwater_1150
+    second: BrownRug_MiddleLeft
   - first:
       213: 6178441319670894190
-    second: underwater_1151
+    second: BrownRug_MiddleMiddle
   - first:
       213: 1574904546314923939
-    second: underwater_1152
+    second: BrownRug_MiddleRight
   - first:
       213: 8962571603076224923
     second: underwater_1153
@@ -3625,13 +3625,13 @@ TextureImporter:
     second: SandPath16
   - first:
       213: 5970949921509087318
-    second: underwater_1207
+    second: BrownRug_BottomLeft
   - first:
       213: -1918350150408437597
-    second: underwater_1208
+    second: BrownRug_BottomMiddle
   - first:
       213: -801998716049237802
-    second: underwater_1209
+    second: BrownRug_BottomRight
   - first:
       213: -4764423882979615164
     second: LargeRoof0
@@ -7922,7 +7922,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_120
+      name: stonefloor
       rect:
         serializedVersion: 2
         x: 102
@@ -10379,7 +10379,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_237
+      name: WoodenFloor
       rect:
         serializedVersion: 2
         x: 153
@@ -27998,7 +27998,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1093
+      name: BrownRug_TopLeft
       rect:
         serializedVersion: 2
         x: 170
@@ -28019,7 +28019,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1094
+      name: BrownRug_TopMiddle
       rect:
         serializedVersion: 2
         x: 187
@@ -28040,7 +28040,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1095
+      name: BrownRug_TopRight
       rect:
         serializedVersion: 2
         x: 204
@@ -29153,7 +29153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1150
+      name: BrownRug_MiddleLeft
       rect:
         serializedVersion: 2
         x: 170
@@ -29174,7 +29174,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1151
+      name: BrownRug_MiddleMiddle
       rect:
         serializedVersion: 2
         x: 187
@@ -29195,7 +29195,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1152
+      name: BrownRug_MiddleRight
       rect:
         serializedVersion: 2
         x: 204
@@ -30350,7 +30350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1207
+      name: BrownRug_BottomLeft
       rect:
         serializedVersion: 2
         x: 170
@@ -30371,7 +30371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1208
+      name: BrownRug_BottomMiddle
       rect:
         serializedVersion: 2
         x: 187
@@ -30392,7 +30392,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: underwater_1209
+      name: BrownRug_BottomRight
       rect:
         serializedVersion: 2
         x: 204
