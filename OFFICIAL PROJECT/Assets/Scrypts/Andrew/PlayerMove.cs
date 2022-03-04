@@ -18,6 +18,11 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (BetweenScenesManager.Instance.EnterSceneMatters)
+        {
+            GenerateStartPosition();
+        }
+        
     }
 
     // Update is called once per frame
@@ -202,6 +207,11 @@ public class PlayerMove : MonoBehaviour
         GetComponent<SpriteRenderer>().flipX = flipH;
         GetComponent<SpriteRenderer>().flipY = flipV;
         
+
+    }
+
+    void GenerateStartPosition()
+    {
 
     }
 }

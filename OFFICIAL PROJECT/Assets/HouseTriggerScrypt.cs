@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class HouseTriggerScrypt : MonoBehaviour
 {
     public int triggerScene; //The Scene we want to transition to
+    public string exitDirection;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
