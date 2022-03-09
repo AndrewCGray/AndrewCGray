@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Andrew/First Town/Buildings/House01.unity
+- path: Assets/Scenes/Andrew/Dungeon/Dungeon Entrance.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
