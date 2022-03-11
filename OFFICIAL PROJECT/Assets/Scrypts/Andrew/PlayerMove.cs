@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
+    public static PlayerMove Instance;
     public float movespeed = 5.0f;
     Rigidbody2D rb;
     bool isVertical;
@@ -17,6 +17,14 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         rb = GetComponent<Rigidbody2D>();
         if (BetweenScenesManager.Instance.EnterSceneMatters)
         {
